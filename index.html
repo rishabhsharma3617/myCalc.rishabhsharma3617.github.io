@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="main-container">
+        <div id="input-value">
+            <form id="input-form">
+                <input id="in-number" onkeypress="disableKeyboard(event)">
+            </form>
+            
+        </div>
+        <div id="buttons">
+            <table border="1" id="input-buttons">
+                <tr>
+                    <td  colspan="2" class="col-red">AC</td>
+                    <td class="col-light">/</td>
+                    <td class="col-light">*</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class ="col-light">-</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="col-light">+</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td rowspan="2" class="col-blue" id="equalSign">=</td>
+                </tr>
+                <tr>
+                    <td colspan="2">0</td>
+                    <td>.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
